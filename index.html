@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huda Lighting | Home of  Lighting Design</title>
+    <meta name="description" content="Modern lighting designed in the UK. Where innovation meets timeless design to create contemporary lighting concepts for any space.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <div class="language-selector">
+                        <!--<span>English</span>
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>-->
+                    </div>
+                    <!--<a href="#" class="login-link">Login</a>-->
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Navigation -->
+        <nav class="main-nav">
+            <div class="container">
+                <div class="nav-content">
+                    <a href="/" class="logo">Huda lights</a>
+                    
+                    <ul class="nav-links" id="navLinks">
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#sectors">Sectors</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#support">Support</a></li>
+                        <li><a href="#where-to-buy">Where to buy</a></li>
+                        <li class="search-link">
+                            <!--<a href="#search">
+                                <span>Search</span>
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"/>
+                                    <path d="m21 21-4.3-4.3"/>
+                                </svg>
+                            </a>-->
+                        </li>
+                    </ul>
+                    
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="3" y1="6" x2="21" y2="6"/>
+                            <line x1="3" y1="12" x2="21" y2="12"/>
+                            <line x1="3" y1="18" x2="21" y2="18"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <span class="logo">huda</span>
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <a href="#products">Products</a>
+            <a href="#sectors">Sectors</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#support">Support</a>
+            <a href="#where-to-buy">Where to buy</a>
+            <a href="#search" class="search-link-mobile">
+                <span>Search</span>
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"/>
+                    <path d="m21 21-4.3-4.3"/>
+                </svg>
+            </a>
+        </nav>
+    </div>
+    
+    <!-- Overlay for mobile menu -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Slider -->
+        <section class="hero-slider" id="heroSlider">
+            <div class="slides-container">
+                <!-- Slide 1 -->
+                <div class="slide active" data-slide="0">
+                    <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=1920&q=80')"></div>
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <p class="slide-eyebrow">New in</p>
+                        <h1 class="slide-title">Lighting the way<br> to brighter homes</h1>
+                        <a href="#downlight-pro" class="slide-cta">
+                            <span>Discover our world</span>
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m9 18 6-6-6-6"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Slide 2 -->
+                <div class="slide" data-slide="1">
+                    <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=1920&q=80')"></div>
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h1 class="slide-title">Your Trusted Destination<br> for Quality Fancy Lighting</h1>
+                        <p class="slide-subtitle">Where innovation meets timeless design to create contemporary lighting concepts for any space.</p>
+                        <a href="#products" class="slide-cta">
+                            <span>Explore all products</span>
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m9 18 6-6-6-6"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Slide 3 -->
+                <div class="slide" data-slide="2">
+                    <div class="slide-bg" style="background-image: url('image/3.png"></div>
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h1 class="slide-title">Guest room<br>collections</h1>
+                        <a href="#collections" class="slide-cta">
+                            <span>View all</span>
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m9 18 6-6-6-6"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide Indicators -->
+            <div class="slide-indicators">
+                <button class="indicator active" data-slide="0" aria-label="Go to slide 1"></button>
+                <button class="indicator" data-slide="1" aria-label="Go to slide 2"></button>
+                <button class="indicator" data-slide="2" aria-label="Go to slide 3"></button>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories-section" id="products">
+            <div class="container">
+                <div class="categories-grid">
+                    <!-- Text Content -->
+                    <div class="categories-text scroll-reveal">
+                        <h2 class="section-title">Modern lighting<br>designed in the Huda</h2>
+                        <p class="section-description">Delivering thoughtfully designed decorative lighting that elevates ambience and architectural beauty.</p>
+                        <a href="#all-products" class="text-link">
+                            <span>Explore all products</span>
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m9 18 6-6-6-6"/>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <!-- Categories Carousel -->
+                    <div class="carousel-wrapper">
+                        <div class="carousel-nav">
+                            <button class="carousel-btn prev" id="categoriesPrev" aria-label="Previous">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="m15 18-6-6 6-6"/>
+                                </svg>
+                            </button>
+                            <button class="carousel-btn next" id="categoriesNext" aria-label="Next">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="m9 18 6-6-6-6"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="carousel" id="categoriesCarousel">
+                            <div class="category-card">
+                                <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80" alt="Bathroom">
+                                <div class="card-overlay"></div>
+                                <h3 class="card-title">Bathroom</h3>
+                            </div>
+                            <div class="category-card">
+                                <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=800&q=80" alt="Interior">
+                                <div class="card-overlay"></div>
+                                <h3 class="card-title">Interior</h3>
+                            </div>
+                            <div class="category-card">
+                                <img src="https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=800&q=80" alt="Exterior">
+                                <div class="card-overlay"></div>
+                                <h3 class="card-title">Exterior</h3>
+                            </div>
+                            <div class="category-card">
+                                <img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=800&q=80" alt="Coastal">
+                                <div class="card-overlay"></div>
+                                <h3 class="card-title">Coastal</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product Types Carousel -->
+                <div class="types-carousel-wrapper">
+                    <div class="carousel-nav">
+                        <button class="carousel-btn prev" id="typesPrev" aria-label="Previous">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m15 18-6-6 6-6"/>
+                            </svg>
+                        </button>
+                        <button class="carousel-btn next" id="typesNext" aria-label="Next">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m9 18 6-6-6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="carousel" id="typesCarousel">
+                        <div class="category-card">
+                            <img src="image/5.jpg" alt="Wall lights">
+                            <div class="card-overlay"></div>
+                            <h3 class="card-title">Wall lights</h3>
+                        </div>
+                        <div class="category-card">
+                            <img src="image/6.jpg" alt="Reading lights">
+                            <div class="card-overlay"></div>
+                            <h3 class="card-title">Reading lights</h3>
+                        </div>
+                        <div class="category-card">
+                            <img src="image/7.jpg" alt="Pendant shades">
+                            <div class="card-overlay"></div>
+                            <h3 class="card-title">Pendant shades</h3>
+                        </div>
+                        <div class="category-card">
+                            <img src="image/8.jpg" alt="Spotlights">
+                            <div class="card-overlay"></div>
+                            <h3 class="card-title">Spotlights</h3>
+                        </div>
+                        <div class="category-card">
+                            <img src="image/9.jpg" alt="Ceiling lights">
+                            <div class="card-overlay"></div>
+                            <h3 class="card-title">Ceiling lights</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Downlight PRO Section -->
+        <section class="downlight-section" id="downlight-pro">
+            <div class="container">
+                <div class="downlight-grid">
+                    <div class="downlight-text scroll-reveal">
+                        <p class="section-eyebrow">Introducing</p>
+                        <h2 class="section-title">Downlight PRO</h2>
+                        <p class="section-description">One solution, endless possibilities. Now available with 4000K, Downlight PRO delivers fully configurable, tailored illumination via a project-friendly selection process, providing design flexibility and dependable performance.</p>
+                        <a href="#explore-downlight" class="text-link">
+                            <span>Explore Downlight PRO</span>
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m9 18 6-6-6-6"/>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <div class="products-grid">
+                        <div class="product-card scroll-reveal">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=600&q=80" alt="Minima PRO">
+                                <div class="product-overlay">
+                                    <span class="overlay-text">More Details</span>
+                                </div>
+                            </div>
+                            <h3 class="product-name">Minima PRO Square Fixed IP65</h3>
+                            <p class="product-subtitle">Fully configurable</p>
+                        </div>
+                        
+                        <div class="product-card scroll-reveal">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=600&q=80" alt="Decor PRO">
+                                <div class="product-overlay">
+                                    <span class="overlay-text">More Details</span>
+                                </div>
+                            </div>
+                            <h3 class="product-name">Decor PRO Round Adjustable</h3>
+                            <p class="product-subtitle">Fully configurable</p>
+                        </div>
+                        
+                        <div class="product-card scroll-reveal">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&q=80" alt="Trimless PRO">
+                                <div class="product-overlay">
+                                    <span class="overlay-text">More Details</span>
+                                </div>
+                            </div>
+                            <h3 class="product-name">Trimless PRO Round Fixed IP65</h3>
+                            <p class="product-subtitle">Fully configurable</p>
+                        </div>
+                        
+                        <div class="product-card scroll-reveal">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=600&q=80" alt="Pinhole PRO">
+                                <div class="product-overlay">
+                                    <span class="overlay-text">More Details</span>
+                                </div>
+                            </div>
+                            <h3 class="product-name">Pinhole PRO Square Adjustable</h3>
+                            <p class="product-subtitle">Fully configurable</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sustainability Section -->
+        <section class="sustainability-section" id="sustainability">
+            <div class="sustainability-bg">
+                <img src="https://images.unsplash.com/photo-1518173946687-a4c036bc7bf8?w=1920&q=80" alt="Sustainability">
+            </div>
+            <div class="sustainability-overlay"></div>
+            <div class="container">
+                <div class="sustainability-content scroll-reveal">
+                    <h2 class="section-title">Sustainability isn't a passing trend</h2>
+                    <p class="section-subtitle">Discover what we are doing to lead meaningful change.</p>
+                    <p class="section-description">Our vision is a future where business, people, and the planet can live more harmoniously together. It's rarely simple, but small acts that challenge the way we do things today, will ultimately lead to real and meaningful change tomorrow.</p>
+                    <a href="#commitments" class="text-link light">
+                        <span>Learn about our commitments</span>
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m9 18 6-6-6-6"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section" id="projects">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <h2 class="section-title">Discover our latest projects</h2>
+                    <a href="#all-projects" class="text-link">
+                        <span>View all</span>
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m9 18 6-6-6-6"/>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="projects-carousel-wrapper">
+                    <div class="carousel-nav">
+                        <button class="carousel-btn prev" id="projectsPrev" aria-label="Previous">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m15 18-6-6 6-6"/>
+                            </svg>
+                        </button>
+                        <button class="carousel-btn next" id="projectsNext" aria-label="Next">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m9 18 6-6-6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="projects-carousel" id="projectsCarousel">
+                        <div class="project-card">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=80" alt="Hotel De Savoir">
+                            <div class="card-overlay"></div>
+                            <div class="project-info">
+                                <p class="project-type">Hospitality Project</p>
+                                <h3 class="project-name">Hotel De Savoir, Paris</h3>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1200&q=80" alt="W Hotel Austin">
+                            <div class="card-overlay"></div>
+                            <div class="project-info">
+                                <p class="project-type">Hospitality project</p>
+                                <h3 class="project-name">W Hotel, Austin</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards & Social Section -->
+        <section class="awards-social-section">
+            <div class="container">
+                <div class="awards-section scroll-reveal">
+                    <h2 class="section-title">Awards & Associations</h2>
+                    <div class="awards-logos">
+                        <div class="award-logo">Design Plus</div>
+                        <div class="award-logo">Red Dot</div>
+                        <div class="award-logo">iF Design</div>
+                        <div class="award-logo">Good Design</div>
+                        <div class="award-logo">FX Awards</div>
+                    </div>
+                </div>
+                
+                <div class="social-banner scroll-reveal">
+                    <div class="social-bg">
+                        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&q=80" alt="Social">
+                    </div>
+                    <div class="social-overlay"></div>
+                    <div class="social-content">
+                        <p class="social-eyebrow">Get social</p>
+                        <h3 class="social-handle">@husalighting</h3>
+                        <a href="https://www.instagram.com/huda_lights?igsh=MTZmemE0Z3FvejRzeA%3D%3D" target="_blank" class="social-btn">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                            <span>Follow us on social</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="logo">huda</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Huda</h4>
+                    <ul class="footer-links">
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#sustainability">Sustainability</a></li>
+                        <li><a href="#terms">Terms of Sale</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#cookies">Cookie Policy</a></li>
+                        <li><a href="#modern-slavery">Modern Slavery Act</a></li>
+                        <li><a href="#applicant-privacy">Applicant Privacy Policy</a></li>
+                        <li><a href="#terms-conditions">Website Terms and Conditions</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#catalogues">Catalogues</a></li>
+                        <li><a href="#doc-search">DoC Search</a></li>
+                        <li><a href="#faqs">FAQs</a></li>
+                        <li><a href="#technical">Technical Assistance</a></li>
+                        <li><a href="#downloads">Technical Downloads</a></li>
+                        <li><a href="#warranty">Warranty and Returns</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Tools</h4>
+                    <ul class="footer-links">
+                        <li><a href="#downlight-selector">Downlight Selector</a></li>
+                        <li><a href="#track-configurator">Track Configurator</a></li>
+                        <li><a href="#driver-calculator">Driver Calculator</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="#where-to-buy">Where to Buy</a></li>
+                        <li><a href="#contact">Get in Touch</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Follow us</h4>
+                    <div class="social-links">
+                        <a href="https://instagram.com/astrolighting" target="_blank" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/company/astrolighting" target="_blank" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect width="4" height="12" x="2" y="9"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="https://facebook.com/huda-Lighting" target="_blank" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="https://pinterest.com/huda" target="_blank" aria-label="Pinterest">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© huda Lighting</p>
+                <p>Site by <a href="https://d3r.com" target="_blank">D3R</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent -->
+    <div class="cookie-consent" id="cookieConsent">
+        <div class="container">
+            <div class="cookie-content">
+                <div class="cookie-text">
+                    <h3>Cookie Consent</h3>
+                    <p>By clicking 'Accept all Cookies' you agree to us using information about how you interact with our website to improve and personalise your browsing experience. This information may also be used for advertising purposes on this website and third party platforms. Click on "Cookie Settings" below to manage your preferences. More information can be found on our <a href="#cookie-policy">Cookie Policy</a>.</p>
+                </div>
+                <div class="cookie-actions">
+                    <button class="btn btn-outline" id="cookieSettings">Cookie Settings</button>
+                    <button class="btn btn-dark" id="acceptAllCookies">Accept All Cookies</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cookie Settings Modal -->
+    <div class="modal" id="cookieModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Cookie Settings</h3>
+                <button class="modal-close" id="modalClose" aria-label="Close">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="cookie-option">
+                    <div class="cookie-option-text">
+                        <h4>Necessary Cookies</h4>
+                        <p>These cookies are essential for the website to function properly.</p>
+                    </div>
+                    <input type="checkbox" checked disabled>
+                </div>
+                <div class="cookie-option">
+                    <div class="cookie-option-text">
+                        <h4>Analytics Cookies</h4>
+                        <p>Help us improve our website by collecting anonymous usage data.</p>
+                    </div>
+                    <input type="checkbox" id="analyticsCookies">
+                </div>
+                <div class="cookie-option">
+                    <div class="cookie-option-text">
+                        <h4>Marketing Cookies</h4>
+                        <p>Used to deliver personalized advertisements.</p>
+                    </div>
+                    <input type="checkbox" id="marketingCookies">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-dark" id="savePreferences">Save Preferences</button>
+            </div>
+        </div>
+    </div>
+    <a href="https://wa.me/+917025961726" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+        <img src="image/w.png" alt="WhatsApp Icon">
+    </a>
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>
