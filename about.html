@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Huda Lighting - Illuminating Excellence</title>
+    <meta name="description" content="Discover Huda Lighting's story, our commitment to quality, and our vision for creating exceptional lighting solutions that transform spaces.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* ============================================
+           ABOUT PAGE SPECIFIC STYLES
+           ============================================ */
+        
+        /* About Hero Section */
+        .about-hero {
+            position: relative;
+            height: 70vh;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 125px;
+            overflow: hidden;
+        }
+        
+        .about-hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .about-hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 100%);
+        }
+        
+        .about-hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: #ffffff;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+        
+        .about-hero-content h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 2vw, 1.3rem);
+            font-weight: 300;
+            opacity: 0.95;
+            line-height: 1.6;
+        }
+        
+        /* Story Section */
+        .story-section {
+            padding: 100px 0;
+        }
+        
+        .story-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        
+        @media (min-width: 968px) {
+            .story-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        .story-content {
+            max-width: 600px;
+        }
+        
+        .section-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 600;
+            margin-bottom: 2rem;
+            line-height: 1.2;
+        }
+        
+        .story-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #666666;
+            margin-bottom: 1.5rem;
+        }
+        
+        .story-text p:last-child {
+            margin-bottom: 0;
+        }
+        
+        .story-image {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        
+        .story-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.6s ease;
+        }
+        
+        .story-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        /* Mission & Vision Section */
+        .mission-vision-section {
+            padding: 100px 0;
+            background-color: #f5f5f5;
+        }
+        
+        .mission-vision-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+        
+        @media (min-width: 768px) {
+            .mission-vision-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .mission-vision-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        .mission-card {
+            background: #ffffff;
+            padding: 50px 40px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .mission-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 30px;
+            color: #1a1a1a;
+        }
+        
+        .card-icon svg {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .mission-card h3 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        .mission-card p {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: #666666;
+        }
+        
+        /* Values Section */
+        .values-section {
+            padding: 100px 0;
+        }
+        /* 1. Make the header transparent by default */
+.header {
+    background-color: transparent !important;
+
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* 2. Style the nav links to be white so they are visible over the dark hero image */
+.header .nav-links a {
+    color: #ffffff !important;
+}
+
+/* 3. This is what happens when the JavaScript adds the 'scrolled' class back on scroll */
+.header.scrolled {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* 4. Change link colors to dark when the header becomes white */
+.header.scrolled .nav-links a {
+    color: #1a1a1a !important;
+}
+
+/* 5. Adjust the Hero margin so it sits BEHIND the header */
+.about-hero {
+    margin-top: 0 !important; /* Remove the gap at the top */
+    padding-top: 100px; /* Add padding instead so content isn't hidden by the nav */
+}
+        
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 60px;
+        }
+        
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: #666666;
+            margin-top: 1rem;
+        }
+        
+        .values-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+        
+        @media (min-width: 768px) {
+            .values-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .values-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        .value-item {
+            padding: 40px 30px;
+            border: 1px solid #e5e5e5;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .value-item:hover {
+            border-color: #1a1a1a;
+            transform: translateY(-5px);
+        }
+        
+        .value-number {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 3rem;
+            font-weight: 600;
+            color: #999999;
+            margin-bottom: 1rem;
+            line-height: 1;
+        }
+        
+        .value-item h3 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .value-item p {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: #666666;
+        }
+        
+        /* Stats Section */
+        .stats-section {
+            position: relative;
+            padding: 100px 0;
+            overflow: hidden;
+        }
+        
+        .stats-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .stats-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+        }
+        
+        .stats-grid {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 60px;
+            text-align: center;
+        }
+        
+        @media (min-width: 640px) {
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .stats-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        
+        .stat-item {
+            color: #ffffff;
+        }
+        
+        .stat-number {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: clamp(3rem, 6vw, 4.5rem);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            line-height: 1;
+        }
+        
+        .stat-label {
+            font-size: 1.1rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            opacity: 0.9;
+        }
+        
+        /* Team Section */
+        .team-section {
+            padding: 100px 0;
+            background-color: #f5f5f5;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+        
+        @media (min-width: 640px) {
+            .team-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .team-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        
+        .team-member {
+            background: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .member-image {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+        }
+        
+        .member-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+        
+        .team-member:hover .member-image img {
+            transform: scale(1.1);
+        }
+        
+        .team-member h3 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.5rem;
+            padding: 30px 30px 10px;
+            margin: 0;
+        }
+        
+        .member-role {
+            font-size: 0.95rem;
+            color: #666666;
+            padding: 0 30px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .member-bio {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #666666;
+            padding: 0 30px 30px;
+        }
+        
+        /* Sustainability Commitment */
+        .sustainability-commitment {
+            padding: 100px 0;
+        }
+        
+        .sustainability-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        
+        @media (min-width: 968px) {
+            .sustainability-grid {
+                grid-template-columns: 1.2fr 1fr;
+            }
+        }
+        
+        .sustainability-features {
+            margin-top: 40px;
+        }
+        
+        .feature-item {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+            align-items: flex-start;
+        }
+        
+        .feature-item svg {
+            width: 24px;
+            height: 24px;
+            color: #1a1a1a;
+            flex-shrink: 0;
+            margin-top: 5px;
+        }
+        
+        .feature-item h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .feature-item p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #666666;
+        }
+        
+        .sustainability-image {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        
+        .sustainability-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.6s ease;
+        }
+        
+        .sustainability-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        /* Why Choose Section */
+        .why-choose-section {
+            padding: 100px 0;
+            background-color: #f5f5f5;
+        }
+        
+        .why-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+        
+        @media (min-width: 640px) {
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .why-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        .why-item {
+            background: #ffffff;
+            padding: 40px 30px;
+            border-radius: 8px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .why-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .why-icon {
+            width: 50px;
+            height: 50px;
+            margin: 0 auto 25px;
+            color: #1a1a1a;
+        }
+        
+        .why-icon svg {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .why-item h3 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+        
+        .why-item p {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: #666666;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+            color: #ffffff;
+        }
+        
+        .cta-content {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .cta-content h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: 1.5rem;
+        }
+        
+        .cta-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.9;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn-light {
+            padding: 16px 40px;
+            font-size: 1rem;
+            font-weight: 500;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-align: center;
+            background: #ffffff;
+            color: #1a1a1a;
+        }
+        
+        .btn-light:hover {
+            background: #f5f5f5;
+            transform: translateY(-2px);
+        }
+        
+        .btn-outline-light {
+            padding: 16px 40px;
+            font-size: 1rem;
+            font-weight: 500;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-align: center;
+            background: transparent;
+            border: 2px solid #ffffff;
+            color: #ffffff;
+        }
+        
+        .btn-outline-light:hover {
+            background: #ffffff;
+            color: #1a1a1a;
+            transform: translateY(-2px);
+        }
+        
+        /* Active Nav Link */
+        .nav-links a.active {
+            color: #1a1a1a !important;
+            font-weight: 500;
+        }
+        
+        .header.scrolled .nav-links a {
+            color: #666666;
+        }
+        
+        .header.scrolled .nav-links a:hover,
+        .header.scrolled .nav-links a.active {
+            color: #1a1a1a;
+        }
+        
+        .mobile-nav a.active {
+            color: #ffffff;
+            font-weight: 500;
+        }
+        
+        /* Newsletter Form */
+        .newsletter {
+            margin-top: 30px;
+        }
+        
+        .newsletter h4 {
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        
+        .newsletter-form {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .newsletter-form input {
+            flex: 1;
+            padding: 12px 16px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            font-size: 14px;
+            border-radius: 4px;
+        }
+        
+        .newsletter-form input::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+        
+        .newsletter-form button {
+            padding: 12px 24px;
+            background: #ffffff;
+            color: #1a1a1a;
+            border: none;
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        
+        .newsletter-form button:hover {
+            background: #f5f5f5;
+        }
+        
+        .footer-brand p {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.6);
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+        
+        /* Scroll Reveal Animation */
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        
+        .scroll-reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 767px) {
+            .about-hero {
+                height: 60vh;
+                min-height: 400px;
+                margin-top: 110px;
+            }
+            
+            .story-section,
+            .mission-vision-section,
+            .values-section,
+            .stats-section,
+            .team-section,
+            .sustainability-commitment,
+            .why-choose-section,
+            .cta-section {
+                padding: 60px 0;
+            }
+            
+            .section-header {
+                margin-bottom: 40px;
+            }
+            
+            .mission-card,
+            .value-item,
+            .why-item {
+                padding: 30px 25px;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .btn-light,
+            .btn-outline-light {
+                width: 100%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <div class="language-selector"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Navigation -->
+        <nav class="main-nav">
+            <div class="container">
+                <div class="nav-content">
+                    <a href="/">
+    <img src="image/logo1.png" alt="Huda Logo" class="logo-image">
+</a>
+
+                    <!--<a href="/" class="logo">Huda lights</a>-->
+                    
+                    <ul class="nav-links" id="navLinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="sectors.html">Sectors</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="3" y1="6" x2="21" y2="6"/>
+                            <line x1="3" y1="12" x2="21" y2="12"/>
+                            <line x1="3" y1="18" x2="21" y2="18"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <span class="logo">huda</span>
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="sectors.html">Sectors</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+        </nav>
+    </div>
+    
+    <!-- Overlay for mobile menu -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Main Content -->
+    <main class="about-page">
+        <!-- Hero Section -->
+        <section class="about-hero">
+            <div class="about-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80')"></div>
+            <div class="about-hero-overlay"></div>
+            <div class="container">
+                <div class="about-hero-content scroll-reveal">
+                    <h1>About Huda Lighting</h1>
+                    <p class="hero-subtitle">Illuminating spaces, inspiring lives since our inception</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story Section -->
+        <section class="story-section">
+            <div class="container">
+                <div class="story-grid">
+                    <div class="story-content scroll-reveal">
+                        <h2 class="section-title">Our Story</h2>
+                        <div class="story-text">
+                            <p>Huda Lighting was born from a simple yet powerful vision: to transform the way people experience light in their everyday lives. What began as a passionate pursuit of excellence in lighting design has evolved into a trusted name in the industry.</p>
+                            <p>Our journey is marked by continuous innovation, unwavering commitment to quality, and a deep understanding of how light shapes human experiences. From residential spaces to commercial environments, we've dedicated ourselves to creating lighting solutions that don't just illuminate—they inspire.</p>
+                            <p>Today, Huda Lighting stands as a testament to the power of combining traditional craftsmanship with cutting-edge technology. Every product we create carries forward our legacy of excellence, sustainability, and design innovation.</p>
+                        </div>
+                    </div>
+                    <div class="story-image scroll-reveal">
+                        <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&q=80" alt="Huda Lighting Workshop">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Vision Section -->
+        <section class="mission-vision-section">
+            <div class="container">
+                <div class="mission-vision-grid">
+                    <div class="mission-card scroll-reveal">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                                <path d="M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h3>Our Mission</h3>
+                        <p>To illuminate the world with innovative, sustainable, and beautifully designed lighting solutions that enhance the quality of life and transform spaces into extraordinary experiences.</p>
+                    </div>
+                    
+                    <div class="mission-card scroll-reveal">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                        </div>
+                        <h3>Our Vision</h3>
+                        <p>To be the global leader in lighting innovation, recognized for our commitment to excellence, sustainability, and our ability to create products that seamlessly blend functionality with aesthetic beauty.</p>
+                    </div>
+                    
+                    <div class="mission-card scroll-reveal">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                        </div>
+                        <h3>Our Values</h3>
+                        <p>Quality craftsmanship, innovative design, environmental responsibility, customer satisfaction, and a relentless pursuit of excellence in everything we create.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Values Section -->
+        <section class="values-section">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <h2 class="section-title">What Drives Us</h2>
+                    <p class="section-subtitle">The principles that guide every decision we make</p>
+                </div>
+                
+                <div class="values-grid">
+                    <div class="value-item scroll-reveal">
+                        <div class="value-number">01</div>
+                        <h3>Innovation</h3>
+                        <p>We continuously push the boundaries of lighting technology, embracing new ideas and cutting-edge solutions to stay ahead of industry trends.</p>
+                    </div>
+                    
+                    <div class="value-item scroll-reveal">
+                        <div class="value-number">02</div>
+                        <h3>Quality</h3>
+                        <p>Every product undergoes rigorous quality control, ensuring that each piece meets our exacting standards for performance, durability, and design excellence.</p>
+                    </div>
+                    
+                    <div class="value-item scroll-reveal">
+                        <div class="value-number">03</div>
+                        <h3>Sustainability</h3>
+                        <p>We're committed to environmental responsibility, using energy-efficient technologies and sustainable practices throughout our production process.</p>
+                    </div>
+                    
+                    <div class="value-item scroll-reveal">
+                        <div class="value-number">04</div>
+                        <h3>Design Excellence</h3>
+                        <p>Our design philosophy merges form and function, creating lighting solutions that are as beautiful as they are practical.</p>
+                    </div>
+                    
+                    <div class="value-item scroll-reveal">
+                        <div class="value-number">05</div>
+                        <h3>Customer Focus</h3>
+                        <p>Your satisfaction is our priority. We listen, understand, and deliver lighting solutions that exceed expectations.</p>
+                    </div>
+                    
+                    <div class="value-item scroll-reveal">
+                        <div class="value-number">06</div>
+                        <h3>Craftsmanship</h3>
+                        <p>We honor traditional craftsmanship while embracing modern manufacturing techniques to create products of exceptional quality.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="stats-bg" style="background-image: url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1920&q=80')"></div>
+            <div class="stats-overlay"></div>
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item scroll-reveal">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Years of Excellence</div>
+                    </div>
+                    
+                    <div class="stat-item scroll-reveal">
+                        <div class="stat-number">5000+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    
+                    <div class="stat-item scroll-reveal">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Product Designs</div>
+                    </div>
+                    
+                    <div class="stat-item scroll-reveal">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Customer Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team-section">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <h2 class="section-title">Our Leadership Team</h2>
+                    <p class="section-subtitle">The visionaries behind Huda Lighting</p>
+                </div>
+                
+                <div class="team-grid">
+                    <div class="team-member scroll-reveal">
+                        <div class="member-image">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80" alt="Team Member">
+                        </div>
+                        <h3>John Anderson</h3>
+                        <p class="member-role">Chief Executive Officer</p>
+                        <p class="member-bio">With over 20 years of experience in the lighting industry, John leads our vision for innovation and growth.</p>
+                    </div>
+                    
+                    <div class="team-member scroll-reveal">
+                        <div class="member-image">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80" alt="Team Member">
+                        </div>
+                        <h3>Sarah Mitchell</h3>
+                        <p class="member-role">Chief Design Officer</p>
+                        <p class="member-bio">Sarah's creative vision shapes every product we create, blending aesthetics with functionality.</p>
+                    </div>
+                    
+                    <div class="team-member scroll-reveal">
+                        <div class="member-image">
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80" alt="Team Member">
+                        </div>
+                        <h3>Michael Chen</h3>
+                        <p class="member-role">Head of Technology</p>
+                        <p class="member-bio">Michael drives our technological innovation, ensuring we stay at the forefront of lighting technology.</p>
+                    </div>
+                    
+                    <div class="team-member scroll-reveal">
+                        <div class="member-image">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80" alt="Team Member">
+                        </div>
+                        <h3>Emily Rodriguez</h3>
+                        <p class="member-role">Sustainability Director</p>
+                        <p class="member-bio">Emily champions our environmental initiatives, making sustainability central to everything we do.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sustainability Commitment -->
+        <section class="sustainability-commitment">
+            <div class="container">
+                <div class="sustainability-grid">
+                    <div class="sustainability-content scroll-reveal">
+                        <h2 class="section-title">Our Commitment to Sustainability</h2>
+                        <p>At Huda Lighting, we believe that great design goes hand in hand with environmental responsibility. Our commitment to sustainability is woven into every aspect of our business.</p>
+                        
+                        <div class="sustainability-features">
+                            <div class="feature-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                                <div>
+                                    <h4>Energy Efficiency</h4>
+                                    <p>All our products use LED technology, reducing energy consumption by up to 80%</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                                <div>
+                                    <h4>Sustainable Materials</h4>
+                                    <p>We source eco-friendly materials and prioritize recyclable components</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                                <div>
+                                    <h4>Carbon Neutral Manufacturing</h4>
+                                    <p>Our production facilities operate with minimal environmental impact</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                                <div>
+                                    <h4>Long-lasting Products</h4>
+                                    <p>Designed for durability, our products have a lifespan of 50,000+ hours</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="sustainability-image scroll-reveal">
+                        <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&q=80" alt="Sustainability">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="why-choose-section">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <h2 class="section-title">Why Choose Huda Lighting</h2>
+                    <p class="section-subtitle">Experience the difference that quality and expertise make</p>
+                </div>
+                
+                <div class="why-grid">
+                    <div class="why-item scroll-reveal">
+                        <div class="why-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                            </svg>
+                        </div>
+                        <h3>Unmatched Quality</h3>
+                        <p>Premium materials and rigorous testing ensure every product meets the highest standards.</p>
+                    </div>
+                    
+                    <div class="why-item scroll-reveal">
+                        <div class="why-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                                <line x1="9" y1="9" x2="9.01" y2="9"/>
+                                <line x1="15" y1="9" x2="15.01" y2="9"/>
+                            </svg>
+                        </div>
+                        <h3>Expert Support</h3>
+                        <p>Our dedicated team provides technical assistance and guidance throughout your project.</p>
+                    </div>
+                    
+                    <div class="why-item scroll-reveal">
+                        <div class="why-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            </svg>
+                        </div>
+                        <h3>Custom Solutions</h3>
+                        <p>We offer tailored lighting solutions designed to meet your specific requirements.</p>
+                    </div>
+                    
+                    <div class="why-item scroll-reveal">
+                        <div class="why-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                            </svg>
+                        </div>
+                        <h3>Innovation First</h3>
+                        <p>Continuous R&D ensures you always get access to the latest lighting technologies.</p>
+                    </div>
+                    
+                    <div class="why-item scroll-reveal">
+                        <div class="why-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                        </div>
+                        <h3>Warranty Protection</h3>
+                        <p>Comprehensive warranty coverage gives you peace of mind with every purchase.</p>
+                    </div>
+                    
+                    <div class="why-item scroll-reveal">
+                        <div class="why-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                        </div>
+                        <h3>Fast Delivery</h3>
+                        <p>Efficient logistics ensure your products arrive on time, every time.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content scroll-reveal">
+                    <h2>Ready to Transform Your Space?</h2>
+                    <p>Discover our complete range of lighting solutions and bring your vision to life</p>
+                    <div class="cta-buttons">
+                        <a href="index.html#products" class="btn-light">Explore Products</a>
+                        <a href="index.html#where-to-buy" class="btn-outline-light">Find a Dealer</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column footer-brand">
+                    <a href="index.html" class="footer-logo logo">Huda</a>
+                    <p>Where innovation meets timeless design to create contemporary lighting concepts for any space.</p>
+                    <div class="newsletter">
+                        <h4>Newsletter</h4>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#products">All Products</a></li>
+                        <li><a href="#downlights">Downlights</a></li>
+                        <li><a href="#track-lighting">Track Lighting</a></li>
+                        <li><a href="#pendants">Pendants</a></li>
+                        <li><a href="#wall-lights">Wall Lights</a></li>
+                        <li><a href="#outdoor">Outdoor Lighting</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Huda</h4>
+                    <ul class="footer-links">
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#sustainability">Sustainability</a></li>
+                        <li><a href="#terms">Terms of Sale</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#cookies">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#catalogues">Catalogues</a></li>
+                        <li><a href="#faqs">FAQs</a></li>
+                        <li><a href="#technical">Technical Assistance</a></li>
+                        <li><a href="#warranty">Warranty and Returns</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Follow us</h4>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect width="4" height="12" x="2" y="9"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© Huda Lighting</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/+917025961726" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+        <img src="image/w.png" alt="WhatsApp Icon">
+    </a>
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Support | Huda Lighting</title>
+    <meta name="description" content="Get in touch with us for support, sales, or general inquiries.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .map-wrapper {
+            width: 100%;
+            height: 400px;
+            background: #eee;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+
+        .support-card {
+            padding: 30px;
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            text-align: center;
+            height: 100%;
+            transition: 0.3s;
+        }
+
+        .support-card:hover {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            background: var(--color-white);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <div class="language-selector"></div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="main-nav">
+            <div class="container">
+                <div class="nav-content">
+                    <a href="/">
+    <img src="image/logo1.png" alt="Huda Logo" class="logo-image">
+</a>
+
+                    <!--<a href="/" class="logo">Huda lights</a>-->
+
+                    <ul class="nav-links" id="navLinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="sectors.html">Sectors</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="3" y1="6" x2="21" y2="6" />
+                            <line x1="3" y1="12" x2="21" y2="12" />
+                            <line x1="3" y1="18" x2="21" y2="18" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <span class="logo">huda</span>
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="sectors.html">Sectors</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+        </nav>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="page-hero-content">
+                <br><br><br>
+                <h1 class="hero-title">Contact & Support</h1>
+                <p class="hero-subtitle">We are here to assist you with any inquiries.</p>
+            </div>
+        </section>
+
+        <!-- Main Contact Form & Info -->
+        <section class="py-5">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-content scroll-reveal">
+                        <div class="section-eyebrow">
+                            <svg width="20" height="1" style="background:var(--color-gray)"></svg>
+                            Get in Touch
+                        </div>
+                        <h2 class="section-title-large">Send us a message</h2>
+                        <p class="text-muted mb-4">Whether you have a question about products, pricing, or need
+                            technical support, our team is ready to answer all your questions.</p>
+
+                        <form class="contact-form" id="contactForm" style="margin-top: 30px;">
+                            <div class="mb-3">
+<input type="text" class="form-input" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-input" placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-textarea"
+                                    placeholder="Your Message" rows="4" required></textarea>
+
+                            </div>
+                            <button type="submit" class="btn-dark curved-btn">Send Message</button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info scroll-reveal">
+                        <div class="map-wrapper">
+                            <!-- Google Map -->
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3910.597621727785!2d75.7533!3d11.432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDI1JzU1LjIiTiA3NcKwNDUnMTIuMCJF!5e0!3m2!1sen!2sin!4v1631234567890!5m2!1sen!2sin"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+
+                        <div class="contact-details-grid">
+                            <div class="contact-item">
+                                <div class="contact-item-label">Phone</div>
+                                <div class="contact-item-value">+91 9658741231</div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-item-label">Email</div>
+                                <div class="contact-item-value">info@hudalighting.com</div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-item-label">Location</div>
+                                <div class="contact-item-value">Perambra, Kozhikode, Kerala, India</div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-item-label">Working Hours</div>
+                                <div class="contact-item-value">Mon - Fri: 9:00 AM - 6:00 PM</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Support Links -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <h2 class="section-title-large">Support Resources</h2>
+                </div>
+                <div class="services-grid">
+                    <div class="support-card">
+                        <h3 class="service-title">Downloads</h3>
+                        <p class="service-desc mb-3">Access our full range of product catalogues and technical
+                            datasheets.</p>
+                        <a href="#" class="text-link">View Downloads</a>
+                    </div>
+                    <div class="support-card">
+                        <h3 class="service-title">Warranty</h3>
+                        <p class="service-desc mb-3">Register your product or understand our warranty terms.</p>
+                        <a href="#" class="text-link">Read Policy</a>
+                    </div>
+                    <div class="support-card">
+                        <h3 class="service-title">Where to Buy</h3>
+                        <p class="service-desc mb-3">Find authorized distributors and retailers near you.</p>
+                        <a href="#" class="btn-outline">Find Distributor</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">huda</a>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Huda</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Terms of Sale</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Catalogues</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="contact.html">Technical Assistance</a></li>
+                        <li><a href="contact.html">Warranty</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Where to Buy</a></li>
+                        <li><a href="contact.html">Get in Touch</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Follow us</h4>
+                    <div class="social-links">
+                        <a href="https://instagram.com/huda_lights" target="_blank">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© Huda Lighting</p>
+                <p>Site by <a href="#" target="_blank">D3R</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/+917025961726" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"
+        aria-label="Chat with us on WhatsApp">
+        <img src="image/w.png" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg'"
+            alt="WhatsApp Icon">
+    </a>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

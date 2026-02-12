@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Huda Lighting</title>
+    <meta name="description" content="Explore our complete range of modern lighting solutions.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <div class="language-selector"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navigation -->
+        <nav class="main-nav">
+            <div class="container">
+                <div class="nav-content">
+                                        <a href="/">
+    <img src="image/logo1.png" alt="Huda Logo" class="logo-image">
+</a>
+                    <!--<a href="index.html" class="logo">Huda lights</a>-->
+
+                    <ul class="nav-links" id="navLinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="sectors.html">Sectors</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="3" y1="6" x2="21" y2="6" />
+                            <line x1="3" y1="12" x2="21" y2="12" />
+                            <line x1="3" y1="18" x2="21" y2="18" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <span class="logo">huda</span>
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <a href="products.html">Products</a>
+            <a href="sectors.html">Sectors</a>
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Support</a>
+            <a href="contact.html">Where to buy</a>
+        </nav>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero"
+        >
+            <div class="page-hero-content">
+                <br><br><br>
+                <h1 class="hero-title">Our Collection</h1>
+                <p class="hero-subtitle">Discover lighting that transforms your space.</p>
+            </div>
+        </section>
+
+        <!-- Product Grid -->
+        <section class="py-5">
+            <div class="container">
+                <!-- Filters (Visual Only) -->
+                <div class="filters mb-4" style="display: flex; gap: 20px; overflow-x: auto; padding-bottom: 10px;">
+                    <button class="btn-outline active" style="background: var(--color-dark); color: white;">All</button>
+                    <button class="btn-outline">Wall Lights</button>
+                    <button class="btn-outline">Ceiling</button>
+                    <button class="btn-outline">Pendant</button>
+                    <button class="btn-outline">Spotlights</button>
+                    <button class="btn-outline">Outdoor</button>
+                </div>
+
+                <div class="products-grid"
+                    style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 40px;">
+                    <!-- Product 1 -->
+                    <div class="product-card scroll-reveal">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=600&q=80"
+                                alt="Minima PRO">
+                            <div class="product-overlay">
+                                <span class="overlay-text">View Details</span>
+                            </div>
+                        </div>
+                        <h3 class="product-name">Minima PRO Square</h3>
+                        <p class="product-subtitle">Recessed Downlight</p>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card scroll-reveal">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=600&q=80"
+                                alt="Decor PRO">
+                            <div class="product-overlay">
+                                <span class="overlay-text">View Details</span>
+                            </div>
+                        </div>
+                        <h3 class="product-name">Decor PRO Round</h3>
+                        <p class="product-subtitle">Adjustable Downlight</p>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card scroll-reveal">
+                        <div class="product-image">
+                            <img src="image/8.jpg" alt="Wall Light">
+                            <div class="product-overlay">
+                                <span class="overlay-text">View Details</span>
+                            </div>
+                        </div>
+                        <h3 class="product-name">Linear Wall</h3>
+                        <p class="product-subtitle">Wall Mounted</p>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card scroll-reveal">
+                        <div class="product-image">
+                            <img src="image/6.jpg" alt="Reading">
+                            <div class="product-overlay">
+                                <span class="overlay-text">View Details</span>
+                            </div>
+                        </div>
+                        <h3 class="product-name">Focus Reading</h3>
+                        <p class="product-subtitle">Reading Light</p>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="product-card scroll-reveal">
+                        <div class="product-image">
+                            <img src="image/7.jpg" alt="Pendant">
+                            <div class="product-overlay">
+                                <span class="overlay-text">View Details</span>
+                            </div>
+                        </div>
+                        <h3 class="product-name">Halo Pendant</h3>
+                        <p class="product-subtitle">Suspended Light</p>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="product-card scroll-reveal">
+                        <div class="product-image">
+                            <img src="image/5.jpg" alt="Spot">
+                            <div class="product-overlay">
+                                <span class="overlay-text">View Details</span>
+                            </div>
+                        </div>
+                        <h3 class="product-name">Ascoli Spot</h3>
+                        <p class="product-subtitle">Surface Spotlight</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">huda</a>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Huda</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Terms of Sale</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Catalogues</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Technical Assistance</a></li>
+                        <li><a href="#">Warranty</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#where-to-buy">Where to Buy</a></li>
+                        <li><a href="index.html#contact">Get in Touch</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Follow us</h4>
+                    <div class="social-links">
+                        <a href="https://instagram.com/huda_lights" target="_blank">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© Huda Lighting</p>
+                <p>Site by <a href="#" target="_blank">D3R</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/+917025961726" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"
+        aria-label="Chat with us on WhatsApp">
+        <img src="image/w.png" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg'"
+            alt="WhatsApp Icon">
+    </a>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

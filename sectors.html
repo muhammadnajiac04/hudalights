@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sectors | Huda Lighting</title>
+    <meta name="description"
+        content="Discover our lighting expertise across Residential, Commercial, and Hospitality sectors.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <div class="language-selector"></div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="main-nav">
+            <div class="container">
+                <div class="nav-content">
+                    <a href="/">
+    <img src="image/logo1.png" alt="Huda Logo" class="logo-image">
+</a>
+
+                    <!--<a href="index.html" class="logo">Huda lights</a>-->
+
+                    <ul class="nav-links" id="navLinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="sectors.html">Sectors</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="3" y1="6" x2="21" y2="6" />
+                            <line x1="3" y1="12" x2="21" y2="12" />
+                            <line x1="3" y1="18" x2="21" y2="18" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <span class="logo">huda</span>
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <a href="products.html">Products</a>
+            <a href="sectors.html">Sectors</a>
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Support</a>
+            <a href="contact.html">Where to buy</a>
+        </nav>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero"
+            style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80')">
+            <div class="page-hero-content">
+                <h1 class="hero-title">Our Expertise</h1>
+                <p class="hero-subtitle">Tailored lighting solutions for every environment.</p>
+            </div>
+        </section>
+
+        <!-- Residential Section -->
+        <section class="py-5" id="residential">
+            <div class="container">
+                <div class="journey-grid">
+                    <div class="overlap-image-col scroll-reveal">
+                        <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80"
+                            alt="Residential Lighting" class="overlap-image">
+                    </div>
+                    <div class="text-block scroll-reveal" style="transition-delay: 0.1s;">
+                        <div class="section-eyebrow">
+                            <svg width="20" height="1" style="background:var(--color-gray)"></svg>
+                            Home
+                        </div>
+                        <h2 class="section-title-large">Residential</h2>
+                        <p class="text-muted mb-4">
+                            We believe that lighting is the jewelry of the home. It has the power to transform a simple
+                            room into a warm, inviting sanctuary.
+                            Our residential collection focuses on visual comfort, blending seamlessly with your interior
+                            design while providing the perfect ambience for relaxation and daily life.
+                        </p>
+                        <p class="text-muted mb-4">
+                            From statement pendants in the dining room to discreet architectural downlights in the
+                            hallway, our range covers every aspect of modern living.
+                        </p>
+                        <a href="products.html" class="btn-outline">View Residential Products</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Commercial Section -->
+        <section class="py-5 bg-light" id="commercial">
+            <div class="container">
+                <div class="journey-grid" style="direction: rtl;"> <!-- Visual flip for variety -->
+                    <div class="overlap-image-col scroll-reveal">
+                        <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&q=80"
+                            alt="Commercial Lighting" class="overlap-image">
+                    </div>
+                    <div class="text-block scroll-reveal" style="transition-delay: 0.1s; direction: ltr;">
+                        <div class="section-eyebrow">
+                            <svg width="20" height="1" style="background:var(--color-gray)"></svg>
+                            Work
+                        </div>
+                        <h2 class="section-title-large">Commercial</h2>
+                        <p class="text-muted mb-4">
+                            Lighting plays a crucial role in productivity and employee well-being. Our commercial
+                            lighting solutions are designed to meet strict performance standards while maintaining a
+                            sleek, modern aesthetic.
+                        </p>
+                        <p class="text-muted mb-4">
+                            We provide glare-free illumination for offices, dynamic lighting for retail spaces, and
+                            durable, efficient solutions for public areas.
+                        </p>
+                        <a href="products.html" class="btn-outline">View Commercial Products</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hospitality Section -->
+        <section class="py-5" id="hospitality">
+            <div class="container">
+                <div class="journey-grid">
+                    <div class="overlap-image-col scroll-reveal">
+                        <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=800&q=80"
+                            alt="Hospitality Lighting" class="overlap-image">
+                    </div>
+                    <div class="text-block scroll-reveal" style="transition-delay: 0.1s;">
+                        <div class="section-eyebrow">
+                            <svg width="20" height="1" style="background:var(--color-gray)"></svg>
+                            Experience
+                        </div>
+                        <h2 class="section-title-large">Hospitality</h2>
+                        <p class="text-muted mb-4">
+                            In hotels and restaurants, atmosphere is everything. Our hospitality range is crafted to
+                            create memorable experiences, from the dramatic lobby entrance to the intimate bedside
+                            reading light.
+                        </p>
+                        <p class="text-muted mb-4">
+                            We offer bespoke design services to ensure our lighting perfectly complements the unique
+                            character of your establishment.
+                        </p>
+                        <a href="contact.html" class="btn-outline">Discuss a Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">huda</a>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Huda</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Terms of Sale</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Catalogues</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="contact.html">Technical Assistance</a></li>
+                        <li><a href="contact.html">Warranty</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Where to Buy</a></li>
+                        <li><a href="contact.html">Get in Touch</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Follow us</h4>
+                    <div class="social-links">
+                        <a href="https://instagram.com/huda_lights" target="_blank">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© Huda Lighting</p>
+                <p>Site by <a href="#" target="_blank">D3R</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/+917025961726" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"
+        aria-label="Chat with us on WhatsApp">
+        <img src="image/w.png" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg'"
+            alt="WhatsApp Icon">
+    </a>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
