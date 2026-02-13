@@ -1838,3 +1838,50 @@ button {
     opacity: 1 !important;
     transform: translateY(0) !important;
 }
+/* ============================================
+   MOBILE HEADER OPTIMIZATIONS
+   ============================================ */
+
+@media (max-width: 1023px) {
+    /* 1. Reduce Header Height in Mobile */
+    .header {
+        background-color: transparent !important;/* Semi-transparent so you can see it */
+    }
+
+    .main-nav {
+        padding: 5px 0; /* Reduced from 15px */
+    }
+
+    /* 2. Resize Logo for Mobile */
+    .logo-image {
+        height: 40px; /* Reduced from 65px */
+        margin-right: 0; /* Remove the huge desktop margin */
+    }
+
+    .nav-content {
+        justify-content: space-between; /* Pushes logo to left, menu to right */
+        width: 100%;
+    }
+
+    /* 3. Fix the Menu Button (3 Lines) */
+    .mobile-menu-btn {
+        display: flex !important;
+        color: #ffffff !important; /* Forces it to be white */
+        z-index: 1002;
+    }
+
+    .mobile-menu-btn svg {
+        width: 30px; /* Slightly larger for easier tapping */
+        height: 30px;
+    }
+
+    /* 4. Fix color when scrolled in mobile */
+    .header.scrolled .mobile-menu-btn {
+        color: var(--color-dark) !important;
+    }
+    
+    /* 5. Adjust Hero Padding so content isn't hidden */
+    .about-hero {
+        padding-top: 60px; 
+    }
+}
