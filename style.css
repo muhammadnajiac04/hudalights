@@ -146,7 +146,7 @@ button {
 }
 /*last changes*/
 .logo-image {
-    height: 65px;
+    height: 110px;
     margin-right: 600px;
 }
 
@@ -1854,8 +1854,10 @@ button {
 
     /* 2. Resize Logo for Mobile */
     .logo-image {
-        height: 40px; /* Reduced from 65px */
+        height: 65px; /* Reduced from 65px */
+        width: 130px;
         margin-right: 0; /* Remove the huge desktop margin */
+        margin-left: -30px;
     }
 
     .nav-content {
