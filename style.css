@@ -1854,8 +1854,8 @@ button {
 
     /* 2. Resize Logo for Mobile */
     .logo-image {
-        height: 65px; /* Reduced from 65px */
-        width: 130px;
+        height: 75px; /* Reduced from 65px */
+        width: 140px;
         margin-right: 0; /* Remove the huge desktop margin */
         margin-left: -30px;
     }
@@ -1887,3 +1887,4 @@ button {
         padding-top: 60px; 
     }
 }
+
